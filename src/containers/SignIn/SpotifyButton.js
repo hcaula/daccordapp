@@ -1,10 +1,25 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Button } from 'react-native';
+import SpotifyHelper from '../../helpers/SpotifyHelper'
 
 class SpotifyButton extends React.Component {
 
+    async login() {
+        try {
+            return await SpotifyHelper.login();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
     render() {
-        return (<View><Text>Spotify Button!</Text></View>);
+        return (
+            <Button
+                onPress={this.login}
+                title="Login on Spotify"
+                color="green"
+            />
+        );
     }
 }
 

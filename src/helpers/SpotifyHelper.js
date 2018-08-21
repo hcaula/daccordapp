@@ -14,6 +14,16 @@ class SpotifyHelper {
             throw e;
         }
     }
+
+    /* Abre a UI do Spotify para fazer login e retorna um booleano 
+    indicando se o usuário já estava logado */
+    async login() {
+        try {
+            return await RNSpotify.login();
+        } catch(e) {
+            throw e;
+        }
+    }
 }
 
 export default new SpotifyHelper();
