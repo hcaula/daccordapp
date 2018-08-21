@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import Spotify from './Spotify';
+import SpotifyButton from './SpotifyButton';
 
 class SignIn extends React.Component {
 
@@ -8,7 +8,7 @@ class SignIn extends React.Component {
         return (
             <View>
                 <Text>Sign In screen</Text>
-                <Spotify/>
+                <SpotifyButton />
             </View>
         )
     }

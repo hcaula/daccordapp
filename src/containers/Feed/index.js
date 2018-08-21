@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Feed extends React.Component {
+class Feed extends Component {
 
     render() {
         return (
